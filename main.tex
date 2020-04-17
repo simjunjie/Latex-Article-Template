@@ -74,6 +74,17 @@
 % bibliography
 \addbibresource{references.bib}
 
+% chapter author
+\makeatletter
+\newcommand{\chapterauthor}[1]
+{
+    {\parindent0pt\vspace*{-20pt}
+    \linespread{1.1}\large\scshape#1
+    \par\nobreak\vspace*{1pt}}
+    \@afterheading
+}
+\makeatother
+
 \title{Article Template}
 \author{Sim Jun Jie}
 
