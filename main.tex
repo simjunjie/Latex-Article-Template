@@ -19,6 +19,7 @@
 \usepackage[linktocpage=true, bookmarks=true, bookmarksnumbered=true, pdfpagemode=UseNone, pdfstartview={XYZ null null 1}, colorlinks=false,hidelinks]{hyperref}
 \usepackage[noabbrev,capitalize,nameinlink]{cleveref}
 \usepackage{todonotes}
+\usepackage{subfiles} % for multiple files
 
 % spacing
 \setlength{\parskip}{1em}
@@ -177,6 +178,9 @@ This is an abstract.
     This is a second example.
     \[ \text{With a second equation.} \addtag \label{eq2} \]
 \end{example}
+
+\section{Subfiles}
+\subfile{sections/subfile}
 
 \section{Citations}
 You can cite stuff like \cite{article} and \cite{misc}.
