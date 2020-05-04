@@ -48,12 +48,26 @@
 \newtheorem{proposition}[mycounter]{Proposition}
 \newtheorem{lemma}[mycounter]{Lemma}
 \newtheorem{corollary}[mycounter]{Corollary}
+
 \theoremstyle{definition}
 \newtheorem{definition}[mycounter]{Definition}
 \newtheorem{example}[mycounter]{Example}
-\newtheorem{construction}[mycounter]{Construction}
+
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+
+\newtheoremstyle{style1}
+    {\topsep} % Space above
+    {\topsep} % Space below
+    {} % Theorem body font % (default is "\upshape")
+    {} % Indent amount
+    {\bfseries} % Theorem head font % (default is \mdseries)
+    {.} % Punctuation after theorem head % default: no punctuation
+    {\newline} % Space after theorem head
+    {} % Theorem head spec
+\theoremstyle{style1}
+\newtheorem{construction}[mycounter]{Construction}
+\newtheorem{problem}[mycounter]{Hard Problem}
 
 % cref
 \creflabelformat{equation}{#2#1#3} % no parenthesis for equation environment
