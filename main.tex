@@ -19,7 +19,7 @@
 \usepackage[linktocpage=true, bookmarks=true, bookmarksnumbered=true, pdfpagemode=UseNone, pdfstartview={XYZ null null 1}, colorlinks=false,hidelinks]{hyperref}
 \usepackage[noabbrev,capitalize,nameinlink]{cleveref}
 \usepackage{todonotes}
-\usepackage{subfiles} % for multiple files
+\usepackage{subfiles} % multiple subfiles
 
 % spacing
 \setlength{\parskip}{1em}
@@ -51,20 +51,9 @@
 \theoremstyle{definition}
 \newtheorem{definition}[mycounter]{Definition}
 \newtheorem{example}[mycounter]{Example}
+\newtheorem{construction}[mycounter]{Construction}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
-
-\newtheoremstyle{style1}
-    {\topsep} % Space above
-    {\topsep} % Space below
-    {} % Theorem body font % (default is "\upshape")
-    {} % Indent amount
-    {\bfseries} % Theorem head font % (default is \mdseries)
-    {.} % Punctuation after theorem head % default: no punctuation
-    {\newline} % Space after theorem head
-    {} % Theorem head spec
-\theoremstyle{style1}
-\newtheorem{construction}[mycounter]{Construction}
 
 % cref
 \creflabelformat{equation}{#2#1#3} % no parenthesis for equation environment
