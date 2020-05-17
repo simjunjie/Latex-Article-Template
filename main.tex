@@ -27,15 +27,15 @@
 \setlength{\parindent}{0em}
 \setlist{nosep}
 
-% variables macro
-\newcommand{\etal}{\textit{et. al.}}
-
 % maths operators
 \DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\poly}{poly}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\paren}{(}{)}
+\DeclarePairedDelimiter{\bkt}{[}{]}
 \DeclarePairedDelimiter{\set}{\{}{\}}
-\DeclarePairedDelimiter{\angle}{\langle}{\rangle}
+\DeclarePairedDelimiter{\innerprod}{\langle}{\rangle}
 
 % counters
 \newaliascnt{mycounter}{algocf} % let "counter" be an alias for "algocf"
@@ -72,7 +72,6 @@
     {} % Theorem head spec
 \theoremstyle{style1}
 \newtheorem{construction}[mycounter]{Construction}
-\newtheorem{problem}[mycounter]{Hard Problem}
 
 % cref
 \creflabelformat{equation}{#2#1#3} % no parenthesis for equation environment
